@@ -30,3 +30,16 @@ let z = 25;
 
 const y = 36;
 console.log(y);
+const a = 45;
+console.log(y);
+
+
+const abc = () => {
+    let alpha = 23;
+    let beta = 20;
+    let result = alpha * beta;
+
+    console.log (result);
+}
+abc();
+
