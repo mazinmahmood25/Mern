@@ -29,3 +29,14 @@ days("");
 let z = 25;
 const y = 45;
 console.log(y);
+
+
+const abc = () => {
+    let alpha = 23;
+    let beta = 20;
+    let result = alpha * beta;
+
+    console.log (result);
+}
+abc();
+
