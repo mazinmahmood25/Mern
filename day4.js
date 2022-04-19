@@ -27,3 +27,6 @@ days = (day) => {
 days("");
 
 let z = 25;
+
+const y = 36;
+console.log(y);
