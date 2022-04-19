@@ -25,3 +25,5 @@ days = (day) => {
     }
 }
 days("");
+
+let z = 25;
