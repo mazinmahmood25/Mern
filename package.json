@@ -1,7 +1,6 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -16,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/mazinmahmood25/Mern/issues"
   },
-  "homepage": "https://github.com/mazinmahmood25/Mern#readme"
+  "homepage": "https://github.com/mazinmahmood25/Mern#readme",
+  "description": ""
 }

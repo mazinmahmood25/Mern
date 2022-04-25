@@ -36,14 +36,14 @@ import fs from 'fs';
 
 //
 
-fs.readdir("link", (err , files) => {
-    if (err) {
-        console.log(err);
-    }else {
-        console.log("Files Name");
-        const FileName = fs.readFileSync("Link");
-        for(const file of FileName) {
-            console.log(files);
-        };
-    };
-})
+// fs.readdir("link", (err , files) => {
+//     if (err) {
+//         console.log(err);
+//     }else {
+//         console.log("Files Name");
+//         const FileName = fs.readFileSync("Link");
+//         for(const file of FileName) {
+//             console.log(files);
+//         };
+//     };
+// })
