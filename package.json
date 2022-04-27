@@ -16,5 +16,8 @@
     "url": "https://github.com/mazinmahmood25/Mern/issues"
   },
   "homepage": "https://github.com/mazinmahmood25/Mern#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "expressjs": "^1.0.1"
+  }
 }
