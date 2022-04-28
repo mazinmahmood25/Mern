@@ -19,6 +19,10 @@ app.get('/product' , function(req , res){
     res.send("Hello product");
 });
 
+app.get('/user/:email' , function(req , res){
+    res.send("Hello Email");
+});
+
 
 app.get('/user/:id' , function(req , res){
     res.send(
