@@ -7,15 +7,18 @@
     <title>CarList</title>
 </head>
 <body>
+    <% if(typeof cheading != 'undefined'){ %>
     <section>
-        <% carheading.forEach(function(heading){ %>
-            <h1><%= heading.heading %></h1>
-        <% }); %>
+        <h1><%= cheading %></h1>
     </section>
-    <ul>
-        <% carlist.forEach(function(cars){ %>
-          <li><%= cars.name %></li>
-        <% }); %>
-      </ul>
+    <% } %>
+    <section>
+        <ul>
+            <% carlist.forEach(function(cars){ %>
+            <h1><%= cars.heading %></h1>
+            <li><%= cars.name %></li>
+            <% }); %>
+        </ul>
+    </section>
 </body>
 </html>
