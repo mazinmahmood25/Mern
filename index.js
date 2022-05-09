@@ -1,4 +1,49 @@
 import fs from 'fs';
+import express from "express";
+
+
+const app = express();
+const port = 8000;
+app.get('/' , function(req , res){
+    // res.sendFile(__dirname + '/form.html', function() {
+    // });
+    app.set('view engine', 'ejs');
+    const carheading = [{
+        heading : 'Best Cars In World'
+    }]
+    const carlist = [{
+        name :'Farari'
+    },
+    {
+        name:'Mercedes'
+    },
+    {
+        name:'Mustang GT'
+    },
+    {
+        name:'BMW'
+    },
+    {
+        name:'AUDI'
+    },
+    {
+        name:'Jaguar'
+    },
+    {
+        name:'FX'
+    },
+    {
+        name:'Mehran'
+    },
+    {
+        name:'Cultus'
+    },
+    {
+        name:'VitZ'
+    },
+]
+    res.render('carlist' , {carlist:carlist,carheading:carheading});
+});app.listen(port);
 
 // FOR DELETE FILES
 
