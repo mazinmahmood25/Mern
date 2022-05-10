@@ -16,7 +16,7 @@
         <ul>
             <% carlist.forEach(function(cars){ %>
             <h1><%= cars.heading %></h1>
-            <li><%= cars.name %></li>
+            <li><a href="/car/<%= cars.id %>"><%= cars.name %></a></li>
             <% }); %>
         </ul>
     </section>

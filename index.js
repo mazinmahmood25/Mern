@@ -20,33 +20,43 @@ app.get('/car' , function(req , res){
 // ]
     const cheading = "All Cars Of This ShowRoom";
     const carlist = [{
+        id : 1,
         name :'Farari',
     },
     {
+        id : 2,
         name:'Mercedes',
     },
     {
+        id : 3,
         name:'Mustang GT'
     },
     {
+        id : 4,
         name:'BMW'
     },
     {
+        id : 5,
         name:'AUDI'
     },
     {
+        id : 6,
         name:'Jaguar'
     },
     {
+        id : 7,
         name:'FX'
     },
     {
+        id : 8,
         name:'Mehran'
     },
     {
+        id : 9,
         name:'Cultus'
     },
     {
+        id : 10,
         name:'VitZ'
     },
 ]
@@ -87,33 +97,51 @@ app.get('/car/:id' , function(req , res){
         name:'BMW'
     },
     {
+        id : 5,
         name:'AUDI'
     },
     {
-        id : 5,
+        id : 6,
         name:'Jaguar'
     },
     {
-        id : 6,
+        id : 7,
         name:'FX'
     },
     {
-        id : 7,
+        id : 8,
         name:'Mehran'
     },
     {
-        id : 8,
+        id : 9,
         name:'Cultus'
     },
     {
-        id : 9,
+        id : 10,
         name:'VitZ'
     },
 ]
     let obje =  carlist.find(car => car.id == req.params.id  );
     // let objec =  carheading.find(carheading => carheading.id == req.params.id  );
     res.render('carlist' , {carlist:[obje]});
-});app.listen(port);
+});
+    // THIS IS CALL BACK FUNCTION
+
+    const thfunc = () => {
+        let abc = 2;
+        let bcd = 4;
+        const result = abc + bcd;
+        console.log(result)
+    }
+    
+    const prefunc = (defunc) => {
+       defunc();
+    }
+app.listen(port , function(){
+    prefunc(thfunc);
+    console.log("THIS IS WORKING");
+});
+
 
 // FOR DELETE FILES
 
