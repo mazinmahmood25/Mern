@@ -1,15 +1,19 @@
-<%- include('includes/header'); -%>
-    <h1>Edit Product</h1>
-    <div class="container">
-        <label for="uname"><b>Product Name</b></label>
-        <input type="text" placeholder="Enter Product Name" name="uname" required>
-    
-        <label for="psw"><b>Price</b></label>
-        <input type="password" placeholder="Enter Price" name="psw" required>
-    
-        <button type="submit">Add</button>
-       
-      </div>
-    
+<%- include('includes/header'); %>
+    <h1>Update User</h1>
+    <form action="/update/<%=product._id%>" method="POST">
+            <div>
+                <label for="">Item</label>
+                <input type="text" name="uname" value="<%=product.uname%>" placeholder="Enter your item">
+            </div>
+            <div>
+              <label for="">Price</label>
+              <input type="text" name="psw" value="<%=product.psw%>" placeholder="Enter your item">
+          </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
     </form>
-<%- include('includes/footer'); -%>
+
+    </body>
+
+    </html>

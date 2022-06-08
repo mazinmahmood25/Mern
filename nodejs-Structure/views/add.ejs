@@ -1,15 +1,21 @@
 <%- include('includes/header'); -%>
     <h1>Add Product</h1>
     <div class="container">
+      <%if (typeof success != "undefined" && success ) { %>
+        <div id="display-success">
+          <p>Product has been saved successfully</p>
+        </div>
+      <% } %>
+      <form action="add" method="post">
         <label for="uname"><b>Product Name</b></label>
         <input type="text" placeholder="Enter Product Name" name="uname" required>
     
         <label for="psw"><b>Price</b></label>
-        <input type="password" placeholder="Enter Price" name="psw" required>
+        <input type="text" placeholder="Enter Price" name="psw" required>
     
         <button type="submit">Add</button>
-       
+      </form>
       </div>
     
-    </form>
+    
 <%- include('includes/footer'); -%></div>

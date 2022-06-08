@@ -5,6 +5,7 @@ import {router} from './routes/route.js';
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import dotenv from 'dotenv';
+import bodyParser from 'body-parser';
 dotenv.config();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 import path from 'path';
@@ -12,6 +13,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
+app.use(bodyParser.urlencoded({extended:false}));
 app.use('/', express.static(path.join(__dirname, 'public')))
 const port = process.env.PORT;
 

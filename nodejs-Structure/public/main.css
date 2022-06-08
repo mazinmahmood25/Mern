@@ -69,3 +69,47 @@ form {
       width: 100%;
     }
   }
+
+  #display-success
+  {
+  width: 100%;
+  border: 1px solid #D8D8D8;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: rgb(236, 255, 216);
+  color: green;
+  text-align: center;
+  margin-top: 30px;
+  }
+
+  body{
+    background-color: papayawhip;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+form, table{
+    max-width: 650px;
+    margin: auto;
+}
+table tr td, table tr th{
+    padding: 10px;
+    border: 1px solid;
+}
+form > div{
+    margin-bottom: 20px;
+    width: 100%;
+}
+form > div > label {
+    font-weight: bold;
+}
+form > div > input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}

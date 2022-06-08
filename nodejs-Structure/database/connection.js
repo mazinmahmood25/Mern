@@ -1,4 +1,4 @@
-import { MongoClient, Object } from "mongodb";
+import { MongoClient , ObjectId} from "mongodb";
 const dbconnection = async function () {
     const client = new MongoClient(process.env.MONGO_URL);
     try{
@@ -9,6 +9,7 @@ const dbconnection = async function () {
     finally{
         // await client.close();
     }
+    return client;
 };
 
-module.exports = {dbconnection};
+export { dbconnection , ObjectId};
