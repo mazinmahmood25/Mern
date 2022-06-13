@@ -1,6 +1,7 @@
 import express from "express";
 import { MongoClient, ServerApiVersion } from "mongodb";
 import {router} from './routes/route.js';
+// import { dbData } from "./database/connection.js";
 // var path = require('path');
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -15,6 +16,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:false}));
 app.use('/', express.static(path.join(__dirname, 'public')))
+// app.use(dbData())
 const port = process.env.PORT;
 
 // var routing = router();
