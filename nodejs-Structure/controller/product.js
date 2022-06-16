@@ -64,7 +64,8 @@ export function view(req, res) {
     dbconnection().then((client) => {
         const usersCollection = client.db('codegirls').collection('products');
     usersCollection.find({/*psw:{$lt:"2000"}*/}).toArray((err, userData) => {
-            res.render('view', { userData });
+            // res.render('view', { userData });
+            res.send(userData);
         });
     });
 }

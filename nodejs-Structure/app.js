@@ -1,6 +1,7 @@
 import express from "express";
 import { MongoClient, ServerApiVersion } from "mongodb";
 import {router} from './routes/route.js';
+import cors from 'cors';
 // import { dbData } from "./database/connection.js";
 // var path = require('path');
 import { dirname } from "path";
@@ -13,6 +14,7 @@ import path from 'path';
 const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.use(cors());
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:false}));
 app.use('/', express.static(path.join(__dirname, 'public')))
